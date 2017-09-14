@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import re
 from math import trunc
 

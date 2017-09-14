@@ -1,8 +1,8 @@
-#!/usr/bin/python3
-import unittest
-from polynomial import Polynomial, Monomial
 import itertools
 import math
+import unittest
+
+from polynomial import Polynomial, Monomial
 
 
 class MonomialInitializeTest(unittest.TestCase):

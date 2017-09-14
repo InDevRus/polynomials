@@ -1,7 +1,7 @@
-#!/usr/bin/python3
 import unittest
-from trivial_errors import find_trivival_errors as check
+
 from trivial_errors import check_bracket_balance
+from trivial_errors import find_trivival_errors as check
 
 
 class TrivialErrorCheckTests(unittest.TestCase):

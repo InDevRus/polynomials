@@ -1,12 +1,12 @@
-#!/usr/bin/python3
-from trivial_errors import find_trivival_errors
-from complcated_errors import find_complicated_errors
-import parsing
-from parsing import\
-    check_and_parse_lexeme_and_exponent_pair as parse
 import re
 from copy import deepcopy
+
+import parsing
+from complcated_errors import find_complicated_errors
+from parsing import \
+    check_and_parse_lexeme_and_exponent_pair as parse
 from parsing import swap
+from trivial_errors import find_trivival_errors
 
 
 class Polynomial:

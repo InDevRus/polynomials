@@ -1,8 +1,8 @@
-#!/usr/bin/python3
 import re
-from parsing import normalize_expression
-from parsing import evaluate
 from math import trunc
+
+from parsing import evaluate
+from parsing import normalize_expression
 
 
 def find_corresponding_bracket(string: str, index: int) -> int:
