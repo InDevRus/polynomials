@@ -147,7 +147,8 @@ class PolynomialOperations(unittest.TestCase):
             self.assertFalse(first.compare_by_epsilon(second, 10**(-10)))
 
     def test_difficult_evaluating(self):
-        chains = [['x**((1-i)(1+i))', 'x**2', 'x^2.0',
+        chains = [['0*i + 3', '3+i * 0', '3'],
+                  ['x**((1-i)(1+i))', 'x**2', 'x^2.0',
                    'x**1.9999999999999999999999999',
                    'x**(-2ii)', 'x**(1(2))', 'x**(-2i(1i))**(1)']]
         for chain in chains:

@@ -209,12 +209,17 @@ def evaluate(expression: str):
     expression = expression.replace('^', '**')
     # Separating double imaginary unit with asterisk.
     expression = expression.replace('jj', 'j*j').replace('jj', 'j*j')
+    # Adding asterisk between number
+    # and imaginary unit.
+    expression = re.sub('(\d)j', '\g<1>*j', expression)
+    expression = re.sub('j(\d)', 'j*\g<1>', expression)
     # Adding coefficient before imaginary unit.
     expression = re.sub('(\D|^)j', '\g<1>1j', expression)
     # Adding asterisk before opening brackets
     # if number, imaginary unit or enclosing
     # bracket was before opening one.
     expression = re.sub('([\dj)])\(', '\g<1>*(', expression)
+
     try:
         return eval(expression)
     except (SyntaxError, ZeroDivisionError):

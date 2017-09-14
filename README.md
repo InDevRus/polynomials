@@ -5,7 +5,7 @@ Compares two polynomials using math parsing.
 
 In Windows PowerShell or Command Prompt:
 ```
-python __main.py__ [first] [second]
+python __main.py__ [-h] [-e epsilon | -d n | -m] [-s] [-f file] [first] [second]
 ```
 
 In bash:
