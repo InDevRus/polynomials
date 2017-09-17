@@ -1,7 +1,7 @@
 import argparse
 from sys import stdin, stderr
 
-from polynomial import Polynomial
+from math_methods.polynomial import Polynomial
 
 # Arguments definition.
 parser = argparse.ArgumentParser(

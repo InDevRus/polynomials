@@ -1,7 +1,7 @@
 import unittest
-
-from trivial_errors import check_bracket_balance
-from trivial_errors import find_trivival_errors as check
+import pathmagic
+from math_methods.trivial_errors import check_bracket_balance
+from math_methods.trivial_errors import find_trivival_errors as check
 
 
 class TrivialErrorCheckTests(unittest.TestCase):
@@ -46,6 +46,7 @@ class TrivialErrorCheckTests(unittest.TestCase):
         incorrectExpressions = ['@xt', '$', '5+5%3',
                                 '4+form!', 'violin2@22222']
         self.assert_check_expressions(correctExpressions, incorrectExpressions)
+
 
 if __name__ == '__main__':
     unittest.main()

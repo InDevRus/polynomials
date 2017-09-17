@@ -1,12 +1,12 @@
 import re
 from copy import deepcopy
 
-import parsing
-from complcated_errors import find_complicated_errors
-from parsing import \
+from math_methods import parsing
+from math_methods.complcated_errors import find_complicated_errors
+from math_methods.parsing import \
     check_and_parse_lexeme_and_exponent_pair as parse
-from parsing import swap
-from trivial_errors import find_trivival_errors
+from math_methods.parsing import swap
+from math_methods.trivial_errors import find_trivival_errors
 
 
 class Polynomial:

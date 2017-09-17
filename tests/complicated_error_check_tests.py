@@ -1,7 +1,8 @@
 import unittest
-from complcated_errors import find_operand_border
-from complcated_errors import check_raise_error
-from complcated_errors import check_division_error
+import pathmagic
+from math_methods.complcated_errors import check_division_error
+from math_methods.complcated_errors import check_raise_error
+from math_methods.complcated_errors import find_operand_border
 
 
 class ComplicatedErrorCheckTests(unittest.TestCase):
@@ -42,7 +43,7 @@ class ComplicatedErrorCheckTests(unittest.TestCase):
                                 'i+i-i**(2i)', 'x**2**i'])
 
     def test_incorrect_division(self):
-        self.\
+        self. \
             incorrect_assertion(check_division_error,
                                 [(' 3:(x y)', ' 3:(x y)', 2),
                                  ('1/( x + y )', '1/( x + y )', 1),
@@ -70,6 +71,7 @@ class ComplicatedErrorCheckTests(unittest.TestCase):
             self.assertEqual(find_operand_border(data[0],
                                                  data[1],
                                                  False), data[2])
+
 
 if __name__ == '__main__':
     unittest.main()

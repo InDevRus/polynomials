@@ -1,8 +1,8 @@
 import re
 from math import trunc
 
-from parsing import evaluate
-from parsing import normalize_expression
+from math_methods.parsing import evaluate
+from math_methods.parsing import normalize_expression
 
 
 def find_corresponding_bracket(string: str, index: int) -> int:
@@ -81,7 +81,7 @@ def indicate_borders_and_operands(string: str, operator) -> tuple:
 
 def iterate_operators(regular_expression: str):
     """
-    Decorator for check error methods in this file.
+    Decorator for check error math_methods in this file.
     """
     def decorator(func):
         def wrapped(string: str) -> tuple:
@@ -104,7 +104,7 @@ def check_division_error(
     Checks if division operator in current position is incorrect.
     """
     if not check_arithmetic(right_operand):
-        return 'Rational function found'
+        return 'Rational function'
     else:
         try:
             denominator = evaluate(normalize_expression(right_operand))

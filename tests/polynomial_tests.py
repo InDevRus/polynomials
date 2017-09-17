@@ -1,8 +1,8 @@
 import itertools
 import math
 import unittest
-
-from polynomial import Polynomial, Monomial
+import pathmagic
+from math_methods.polynomial import Polynomial, Monomial
 
 
 class MonomialInitializeTest(unittest.TestCase):

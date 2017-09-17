@@ -18,3 +18,12 @@ To get help:
 ```
 python __main.py__ --help
 ```
+
+## Tests
+
+Tests can be only executed manually.
+For instance, in command prompt you can type this:
+
+```
+cd tests && for %a in (*.py) do (python %a) && cd ..
+```

@@ -1,6 +1,6 @@
 import unittest
-
-import parsing
+import pathmagic
+from math_methods import parsing
 
 
 class MathExpressionTests(unittest.TestCase):
