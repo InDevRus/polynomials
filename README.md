@@ -5,25 +5,32 @@ Compares two polynomials using math parsing.
 
 In Windows PowerShell or Command Prompt:
 ```
-python __main.py__ [-h] [-e epsilon | -d n | -m] [-s] [-f file] [first] [second]
+python polynomials [-h] [-e epsilon | -d n | -m] [-s] [-f file] [first] [second]
 ```
 
 In bash:
 ```
-python3 __main.py__ [first] [second]
+python3 polynomials [first] [second]
 ```
 
 To get help:
 
 ```
-python __main.py__ --help
+python polynomials --help
 ```
 
 ## Tests
 
-Tests can be only executed manually.
-For instance, in command prompt you can type this:
+Tests can be executed one by one this way:
 
 ```
-cd tests && for %a in (*.py) do (python %a) && cd ..
+python tests/polynomial_tests.py
 ```
+
+Or you can simply use test running script:
+
+```
+python tests
+```
+
+To verbose output use ```-v``` or ```--verbose``` parameter.
