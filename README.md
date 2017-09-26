@@ -3,6 +3,12 @@ Compares two polynomials using math parsing.
 
 ## How to execute
 
+Universal way:
+
+```
+py polynomials [-h] [-e epsilon | -d n | -m] [-s] [-f file] [first] [second]
+```
+
 In Windows PowerShell or Command Prompt:
 ```
 python polynomials [-h] [-e epsilon | -d n | -m] [-s] [-f file] [first] [second]
@@ -10,13 +16,13 @@ python polynomials [-h] [-e epsilon | -d n | -m] [-s] [-f file] [first] [second]
 
 In bash:
 ```
-python3 polynomials [first] [second]
+python3 polynomials [-h] [-e epsilon | -d n | -m] [-s] [-f file] [first] [second]
 ```
 
 To get help:
 
 ```
-python polynomials --help
+py polynomials --help
 ```
 
 ## Tests
@@ -24,13 +30,13 @@ python polynomials --help
 Tests can be executed one by one this way:
 
 ```
-python tests/polynomial_tests.py
+py tests/polynomial_tests.py
 ```
 
 Or you can simply use test running script:
 
 ```
-python tests
+py tests [-v]
 ```
 
-To verbose output use ```-v``` or ```--verbose``` parameter.
+Use ```-v``` or ```--verbose``` parameter to verbose output.
